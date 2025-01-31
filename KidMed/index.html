@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KidMed</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Coiny&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="dist/hamburgers.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <aside class="aside">
+
+        <div class="settings__wrapper">
+            <h1 class="logo__name">KidMed</h1>
+        </div>
+
+        <div class="nav">
+            <ul class="nav__link--wrapper">
+                <li data-target="home" class="nav__link nav__link-bg-active homeBtn"> Главная</li>
+                <li data-target="helper" id="nav__link--chat" class="nav__link nav__link-bg-active">Личный помощник</li>
+
+                <li data-target="consultation" class="nav__link nav__link-bg-active">Запись</li>
+
+                <li data-target="gamefecation" class="nav__link dropdown"><span class="dropdown-toggle"> Геймификация<svg class="nav__link--svg"
+                            transform="translate(6,7)" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#6E6B7B">
+                            <path d="M480-360 280-560h400L480-360Z" />
+                        </svg></span>
+                    <ul class="dropdown-menu">
+                        <li><a data-target="ex" href="#" class="dd__link nav__link nav__link-bg-active">Зарядки</a></li>
+                        <li><a data-target="rate" href="#" class="dd__link nav__link nav__link-bg-active">Рейтинг</a></li>
+                        <li><a data-target="games" href="#" class="dd__link nav__link nav__link-bg-active">Игры</a></li>
+                    </ul>
+                </li>
+
+                <li data-target="notifications" class="nav__link nav__link-bg-active">Напоминания</li>
+                <li data-target="navigation" class="nav__link nav__link-bg-active">Навигация</li>
+                <li data-target="profile" class="nav__link nav__link--profile nav__link-bg-active">Профиль</li>
+                <li data-target="settings" class="nav__link nav__link-bg-active">Настройки <svg transform="translate(75,6)" fill="#6E6B7B"
+                        xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#B7B7B7">
+                        <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+                    </svg></li>
+            </ul>
+        </div>
+    </aside>
+    <div id="home" class="container">
+        <div class="header">
+
+
+            <h1 class="header__title">
+                Добро Пожаловать в <span> KidMed</span>
+            </h1>
+            <h4 class="header__desc">
+                <span>KidMed</span> - ваш индивидуальный медицинский навигатор!
+            </h4>
+
+        </div>
+
+        <div class="profile">
+
+            <div class="profile__about">
+                <img class="avatar" src="colle2.webp" alt="Avatar">
+                <h2>John Doe</h2>
+                <h4 class="job-title__profile">Ребенок</h4>
+                <button class="change__profile">Изменить Профиль</button>
+
+                <div class="language__wrapper">
+                    <svg transform="translate(12,-1)" xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#6E6B7B">
+                        <path
+                            d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z" />
+                    </svg>
+                    <select class="language" name="language" id="lang">
+                        <option class="lang__option" value="language">Русский</option>
+                        <option class="lang__option" value="language">English</option>
+                        <option class="lang__option" value="language">Кыргызча</option>
+                    </select>
+
+                </div>
+            </div>
+        </div>
+        <div class="suchess">
+            <h2 class="suchess__title">Привет Пользователь!</h2>
+            <h4 class="card__suchess">Ваши данные: Отлично</h4>
+            <div class="circle-grades__wrapper">
+                <div class="circle-grade-1">
+                    <h4>Хорошо</h4>
+                </div>
+                <div class="circle-grade-2">
+                    <h4>Плохо</h4>
+                </div>
+            </div>
+            <div class="suchess__block">
+
+            </div>
+            <a class="change__suchess" href="#">Изменить</a>
+        </div>
+        <div class="notifications">
+            <h2 class="notif__title">Последние уведомления</h2>
+            <ul>
+                <li>Cоблюдайте диету!</li>
+                <li>Сделайте сегодня ночную зарядку перед сном</li>
+                <li>Выпейте таблетку</li>
+
+            </ul>
+        </div>
+
+        <div class="tournaments">
+            <h2 class="tour__title">Поликлиники</h2>
+            <ul>
+                <li>3 больница</li>
+                <li>Чуй проспект 103</li>
+                <li>Московская ул. 228</li>
+                <li>Курманжан Датка 70</li>
+
+            </ul>
+        </div>
+        
+            
+        
+        
+    </div>
+
+
+
+    <!-- ---------------------------------------------------------------------- -->
+    <div id="helper" class="hidden__wrapper hidden content">
+        <div id="hidden-chat" class="hidden-chat">
+            <div id="chats__wrap" class="chats__wrap">     
+                <button class="swpright__btn" onclick="moveBlock()">
+                    <svg  class="swpright__icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                </button> 
+                <ul class="chats__link--wrap">
+                    <li class="chats__link">Личный помощник</li>
+                    <li class="chats__link">Специалисты</li>
+                    <li class="chats__link">Связаться с нами</li>
+                    <li class="chats__link">Оставить отзыв</li>
+                </ul>
+            </div>
+                <div class="container-2">
+                <h2 class="chat__title">Личный помощник</h2>
+                <div class="input__wrap"><input type="text" placeholder="Введите текст"></div>
+                <span class="input-icon"><svg class="clip-icon" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#6E6B7B"><path d="M720-330q0 104-73 177T470-80q-104 0-177-73t-73-177v-370q0-75 52.5-127.5T400-880q75 0 127.5 52.5T580-700v350q0 46-32 78t-78 32q-46 0-78-32t-32-78v-370h80v370q0 13 8.5 21.5T470-320q13 0 21.5-8.5T500-350v-350q-1-42-29.5-71T400-800q-42 0-71 29t-29 71v370q-1 71 49 120.5T470-160q70 0 119-49.5T640-330v-390h80v390Z"/></svg> <svg class="send-icon" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#6E6B7B"><path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"/></svg></span>
+            </div>
+            </div>
+        </div>
+    
+
+
+
+
+
+    <!-- ------------------------------------------------------------------------ -->
+
+<div id="profile" class="hidden content">
+    <div class="hidden-profile">
+        <img class="avatar" src="colle2.webp" alt="Avatar">
+        <h2>John Doe</h2>
+        <h4 class="job-title__profile">Ребенок</h4>
+        <h2>Возраст: 8</h2>
+        <h2>Вес: 25кг</h2>
+        <h2>Рост: 120см</h2>  
+        <h2>Аллергии: Нету</h2>
+        <h2>Зрение: 2</h2>
+        <button class="change__profile cp2">Изменить Профиль</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ----------------------------------------------------------------------------- -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
